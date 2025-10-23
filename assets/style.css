@@ -1,3 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-    background-color: red;
+   background-image: url("./img/bg-desktop.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   font-family: "Inter", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 300;
+   font-style: normal;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+#container{
+    width: 360px;
+    height: 712px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width:768px){
+    #container{
+        width: 588px;
+    }
+}
+
+.profile{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.profile a,
+.links a{
+    color: white;
+}
+.links{
+    padding: 24px;
+}
+.links ul{
+    list-style: none;
+}
+.links li a{
+    border: 1px solid rgb(255, 255, 255,0.5);
+    display: flex;
+    justify-content: center;
+    padding: 16px 24px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    font-size: 16px;
+}
+.links li{
+    margin-bottom: 16px;
+}
+.links li:last-child{
+    margin-bottom: 0;
 }
